@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Steven Loria's Personal Page</title>
+ <link href="http://username.github.com/" rel="self"/>
+ <link href="http://username.github.com"/>
+ <updated>2013-03-23T01:07:56-05:00</updated>
+ <id>http://username.github.com</id>
+ <author>
+   <name>Steven Loria</name>
+   <email>sloria1@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>My MOOC education 2013</title>
+   <link href="http://username.github.com/education/2013/03/23/my-mooc-education-2013"/>
+   <updated>2013-03-23T00:00:00-05:00</updated>
+   <id>http://username.github.com/education/2013/03/23/my-mooc-education-2013</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;In progress&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Design of Computer Programs (Udacity)&lt;/li&gt;
+
+&lt;li&gt;Functional Programming in Scala (Coursera)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Near future&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Machine Learning (Coursera)&lt;/li&gt;
+
+&lt;li&gt;Data Science (Coursera)&lt;/li&gt;
+
+&lt;li&gt;Mathematics in Biology (Udemy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Completed&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data Analysis (Coursera)&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ 
+</feed>
