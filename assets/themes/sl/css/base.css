@@ -15,6 +15,12 @@ position: relative;
 -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;}
+  a:hover {
+    color: #227ce8; }
+
+
 .sidebar {
   position: fixed;
   left: 15px;
@@ -53,7 +59,6 @@ position: relative;
     .sidebar .sections a {
       padding: 5px 0;
       color: black;
-      font-weight: bold;
       font-size: 0.8em;
       display: block; }
       .sidebar .sections a:hover {
@@ -216,3 +221,39 @@ text-decoration: none;
 }
 .content a:hover {
   color: #227ce8; }
+
+/* Footer */
+footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 45px;
+  font-size: 80%;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999999;
+}
+
+footer a {
+  color: #999999;
+}  
+
+footer .meta {
+  float: right;
+  text-align: right;
+  margin-right: 40px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+footer .company {
+  float: left;
+  margin-left: 25px;
+}
+

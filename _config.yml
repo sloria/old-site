@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Steven Loria's Personal Page
-tagline: The nocturnal biologist
+title : Steven Loria
+tagline:
 author :
   name : Steven Loria
   email : sloria1@gmail.com
