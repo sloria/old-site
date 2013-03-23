@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://sloria.github.com
 gravatar_url: http://www.gravatar.com/avatar/c74f9cfd7776305a82ede0b765d65402.png
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -100,7 +100,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-39544608-1'
     getclicky :
       site_id : 
     mixpanel :
