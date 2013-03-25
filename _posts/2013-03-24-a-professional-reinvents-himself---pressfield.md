@@ -2,7 +2,7 @@
 layout: post
 title: "A professional reinvents himself - Steven Pressfield"
 description: ""
-permalink: a-professional-reinvents-himself
+permalink: /a-professional-reinvents-himself
 category: quotes
 tags: [steven-pressfield]
 ---
