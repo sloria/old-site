@@ -24,7 +24,7 @@ It was UW-Madison's spring break this past week, so I finally had some time to s
 
 [^1]: Similar in spirit to [this](http://adambard.com/blog/PHP-ruby-python-clojure-webapps-by-example/), except that my purpose was solely to teach myself rather than provide good examples of the different languages.
 
-[^2]: **I'm convinced that the fastest way to build proficiency with a new language/framework/etc. is to build a small, single-purpose app using it.** I don't mean an app from a tutorial (e.g. the ubiquitous 20-minute blog) but an app that you actually find interesting. The app can be embarrassingly small and messy, as Reversr was, and you are still guaranteed to **learn more in less time than it takes for you to find "*the best tutorial for learning X*" on Google.**
+[^2]: **I've found that one of the most efficient ways to start learning a new language/framework/etc. is to build a small, single-purpose app using it.** I don't mean an app from a tutorial (e.g. the ubiquitous 20-minute blog) but an app that you actually find interesting. The app can be embarrassingly small and messy, as Reversr was, and you are still guaranteed to **learn more in less time than it takes for you to find "*the best tutorial for learning X*" on Google.**
 
 [reversr-py]: http://www.github.com/sloria/reversr
 [reversr-rb]: http://www.github.com/sloria/reversr-artanis
