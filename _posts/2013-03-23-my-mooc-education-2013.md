@@ -2,7 +2,7 @@
 layout: post
 title: "My MOOC education 2013"
 description: ""
-category: education
+category: lists
 tags: [education]
 ---
 {% include JB/setup %}

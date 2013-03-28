@@ -13,7 +13,7 @@ group: navigation
 {% endcomment %}
 
   <section class="meta">
-    <h1>Posts</h1>
+    <h1>Posts </h1>
     <ul class="listing">
       {% for post in site.posts %}
       <li>
@@ -21,4 +21,7 @@ group: navigation
       </li>
       {% endfor %}
     </ul>
+    <div class="rss">
+    <p><a href="/rss.xml">rss &nbsp;<i class="icon-rss"></i></a></p>
+    </div>
   </section>

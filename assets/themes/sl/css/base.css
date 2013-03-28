@@ -21,6 +21,8 @@ a {
     color: #227ce8; }
 
 
+
+
 .sidebar {
   position: fixed;
   left: 15px;
@@ -137,7 +139,7 @@ a {
     margin: 2em 3em; }
   .content li {
     margin-bottom: 10px;
-    line-height: 1.4em; }
+    line-height: 1.5em; }
 blockquote {
 background:#f9f9f9;
 border-left:10px solid #ccc;
@@ -156,14 +158,16 @@ vertical-align:-.4em;
 blockquote p {
 display:inline;
 }
-    .content blockquote cite:before {
-      content: '— '; }
-    .content blockquote cite {
-      display: block;
-      margin-top: .5em;
-      text-align: right;
-      color: #111;
-      font-style: normal; }
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
   .content .byline {
     margin-bottom: 17px;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
@@ -204,7 +208,8 @@ display:inline;
     .content .meta p {
       line-height: 1.4;
       font-size: 14px;
-      margin-top: 0px; }
+      margin-top: 0px; 
+      color: #666666}
     .content .meta img {
       position: relative;
       float: left;
@@ -228,11 +233,15 @@ display:inline;
     color: #fff; }
 
 .content a {
-color: #3399cc;
+color: #336699;
 text-decoration: none;
 }
 .content a:hover {
   color: #227ce8; }
+
+.footnotes {
+  font-size: 0.8em;
+}
 
 /* Footer */
 footer {
@@ -267,5 +276,10 @@ footer ul li {
 footer .company {
   float: left;
   margin-left: 25px;
+}
+
+.rss a {
+  color: #999999;
+  float: right;
 }
 
