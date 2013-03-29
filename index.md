@@ -7,11 +7,11 @@ description: Steven Loria's personal page
 
 # The name's Steve. Just Steve.
 
-### I like science, programming, and octopuses.
+## Biologist by formal education, programmer by self-education, and  octopus enthusiast.
 
-I am a student at the University of Wisconsin-Madison, a research assistant at the [Marler Laboratory][marlerlab], a programmer at the [Waisman Center for Brain Imaging][waisman], and a life-long learner.
+I go to class at the University of Wisconsin-Madison, do research at the [Marler Laboratory][marlerlab], and write code at the [Waisman Center for Brain Imaging][waisman].
 
-I'm an amateur at everything, in a constant struggle to [turn pro](/a-professional-reinvents-himself).
+I'm an amateur at everything in a constant struggle to [turn pro](/a-professional-reinvents-himself).
 
 The easiest way to contact me is by [email][email].
 

@@ -6,8 +6,6 @@ category:
 tags: []
 ---
 {% include JB/setup %}
-> What a misfortune that we should … let our boys’ schooling interfere with their education. <cite><a href="http://quoteinvestigator.com/2010/09/25/schooling-vs-education/">Grant Allen</a></cite>
-
 It was UW-Madison's spring break this past week, so I finally had some time to see family, friends, and improve my programming chops--something I desperately needed to do but haven't had nearly enough time for because of my college classes. Here are a few things I finished in the past 5 days:
 
 - [**Reversr**](http://reversr.herokuapp.com)  [\[code\]][reversr-py] - Since I've worked primarily with full-stack web frameworks, i.e. Django and Rails, I wanted to give their micro-sized counterparts, Flask and Sinatra, a fair shot. I also needed a reason to learn the [Web Audio API][webaudio]. So I made an app with [both][reversr-py] [frameworks][reversr-rb][^1] that just records and plays back audio (in reverse, of course) in a browser.[^2]
