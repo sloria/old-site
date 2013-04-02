@@ -10,6 +10,7 @@ tags: [education]
 **In progress**
 - The Design of Computer Programs (Udacity)
 - Functional Programming in Scala (Coursera)
+- Intro to Databases (Stanford)
 
 **Near future**
 - Machine Learning (Coursera)
