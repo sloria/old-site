@@ -20,9 +20,6 @@ a {
   a:hover {
     color: #227ce8; }
 
-
-
-
 .sidebar {
   position: fixed;
   left: 15px;
@@ -120,12 +117,13 @@ a {
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.7em; }
-    .content p code {
-      font-size: 12px;
-      background-color: #eeeeee;
-      border: 1px solid #777777;
-      border-radius: 3px;
+  .content code {
       padding: 2px 3px; }
+  .content .highlight {
+    background-color: #f8f8f8;
+    padding: 1px 15px;
+    margin-bottom: 1.2em;
+  }
   .content img {
     padding: 3px;
     border: 1px solid #eeeeee;
