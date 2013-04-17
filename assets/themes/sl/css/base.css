@@ -117,13 +117,6 @@ a {
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.7em; }
-  .content code {
-      padding: 2px 3px; }
-  .content .highlight {
-    background-color: #f8f8f8;
-    padding: 1px 15px;
-    margin-bottom: 1.2em;
-  }
   .content img {
     padding: 3px;
     border: 1px solid #eeeeee;
