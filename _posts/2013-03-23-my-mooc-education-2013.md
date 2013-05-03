@@ -7,16 +7,16 @@ tags: [education]
 ---
 {% include JB/setup %}
 
+*Updated: May 3, 2013*
+
 **In progress**
 
-- The Design of Computer Programs (Udacity)
-- Functional Programming in Scala (Coursera)
-- Intro to Databases (Stanford)
+- Data Science (Coursera)
 
 **Near future**
-
+- The Design of Computer Programs (Udacity)
+- Intro to Databases (Stanford)
 - Machine Learning (Coursera)
-- Data Science (Coursera)
 - Mathematics in Biology (Udemy)
 
 **Completed**

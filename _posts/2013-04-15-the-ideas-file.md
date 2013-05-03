@@ -35,7 +35,8 @@ at the command line to open up the `.ideas.md` file in your text editor.
 
 What you put in this file is completely up to you. Mine looks something like this:
 
-<pre><code class="markdown">~/.ideas.md
+<pre><code class="no-highlight">~/.ideas.md
+    
 # Software
     - doomed startup idea 1
     - some feature for an open-source project 
