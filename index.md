@@ -7,7 +7,7 @@ description: Steven Loria's personal page
 
 # The name's Steve. Just Steve.
 
-## Biologist by formal education, programmer by self-education, and  octopus enthusiast.
+### Biologist by formal education, programmer by self-education, and  octopus enthusiast.
 
 I go to class at the University of Wisconsin-Madison, do research at the [Marler Laboratory][marlerlab], and write code at the [Waisman Center for Brain Imaging][waisman].
 
