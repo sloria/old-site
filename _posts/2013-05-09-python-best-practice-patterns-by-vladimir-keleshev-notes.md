@@ -24,11 +24,11 @@ class Boiler:
         if psi_to_pascal(pressure_psi) > MAX_PRESSURE:
             if temperature > MAX_TEMPERATURE:
                 # Shutdown!
-                self.pnoz.relay[15] &= MASK_POWER_COIL
+                self.pnoz.relay[15] &amp;= MASK_POWER_COIL
                 self.pnoz.port.write('$PL,15\0')
                 sleep(RELAY_RESPONSE_DELAY)
                 # Successful shutdown?
-                if self.pnoz.relay[16] & MASK_POWER_OFF:
+                if self.pnoz.relay[16] &amp; MASK_POWER_OFF:
                     # Play alarm
                     with open(BUZZER_MP3_FILE) as f:
                         play_sound(f.read())
