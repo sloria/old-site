@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My MOOC education 2013"
+title: "My MOOC education 2013 (Updated May 3, 2013)"
 description: ""
 category: lists
 tags: [education]
