@@ -6,6 +6,7 @@ category:
 tags: [terminal, tips]
 ---
 {% include JB/setup %}
+> The best way to a good idea is to have lots of ideas. <cite>Linus Pauling</cite>
 
 If you're a regular Terminal user, chances are you've had a stroke of inspiration while your command prompt was up.
 
