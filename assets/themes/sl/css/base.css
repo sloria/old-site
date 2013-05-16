@@ -277,3 +277,8 @@ footer .company {
   float: right;
 }
 
+code {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
