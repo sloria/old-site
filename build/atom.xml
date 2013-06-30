@@ -4,7 +4,7 @@
  <title>Steven Loria</title>
  <link href="http://www.stevenloria.com/" rel="self"/>
  <link href="http://www.stevenloria.com"/>
- <updated>2013-06-30T10:35:08-05:00</updated>
+ <updated>2013-06-30T10:41:15-05:00</updated>
  <id>http://www.stevenloria.com</id>
  <author>
    <name>Steven Loria</name>
@@ -17,11 +17,11 @@
    <link href="http://www.stevenloria.com/lazy-evaluated-properties-in-python"/>
    <updated>2013-06-30T00:00:00-05:00</updated>
    <id>http://www.stevenloria.com/lazy-evaluated-properties-in-python</id>
-   <content type="html">&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Lazy_evaluation'&gt;Lazy evaluation&lt;/a&gt; is a very useful pattern that can make you code more efficient in many situations. One example of this is instance attributes that take long to compute:&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Lazy_evaluation'&gt;Lazy evaluation&lt;/a&gt; is a useful pattern that can improve your code&amp;#8217;s efficiency in many situations. One example of this is instance attributes that take long to compute:&lt;/p&gt;
 &lt;script src='https://gist.github.com/sloria/5895397.js'&gt; &lt;/script&gt;
 &lt;p&gt;This approach may cause initialization to take unnecessarily long, especially when you don&amp;#8217;t always need to access &lt;code&gt;Person#relatives&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;A better strategy (the lazy one) would be to get &lt;code&gt;relatives&lt;/code&gt; only when it&amp;#8217;s needed:&lt;/p&gt;
+&lt;p&gt;A better strategy would be to get &lt;code&gt;relatives&lt;/code&gt; only when it&amp;#8217;s needed (i.e. &amp;#8220;lazily&amp;#8221;):&lt;/p&gt;
 &lt;script src='https://gist.github.com/sloria/5895446.js'&gt; &lt;/script&gt;
 &lt;p&gt;In this case, the list of relatives is only computed the first time &lt;code&gt;Person#relatives&lt;/code&gt; is accessed. After that, it is stored in &lt;code&gt;Person#_relatives&lt;/code&gt; to prevent repeated evaluations.&lt;/p&gt;
 
