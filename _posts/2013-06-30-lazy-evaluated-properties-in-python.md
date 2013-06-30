@@ -7,13 +7,13 @@ tags: [programming, python]
 ---
 {% include JB/setup %}
 
-[Lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation) is a very useful pattern that can make you code more efficient in many situations. One example of this is instance attributes that take long to compute:
+[Lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation) is a useful pattern that can improve your code's efficiency in many situations. One example of this is instance attributes that take long to compute:
 
 <script src="https://gist.github.com/sloria/5895397.js"> </script>
 
 This approach may cause initialization to take unnecessarily long, especially when you don't always need to access `Person#relatives`.
 
-A better strategy (the lazy one) would be to get `relatives` only when it's needed:
+A better strategy would be to get `relatives` only when it's needed (i.e. "lazily"):
 
 <script src="https://gist.github.com/sloria/5895446.js"> </script>
 
