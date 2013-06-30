@@ -14,41 +14,27 @@ I find plain text in [Markdown](http://daringfireball.net/projects/markdown/) to
 
 Create a hidden file called `.ideas.md` in your home directory.
 
-<pre><code class="bash">$ touch ~/.ideas.md      
-</code>
-</pre>
+`$ touch ~/.ideas.md`
+
 
 Add an alias to your `.bash_profile` or `.zshrc` file so you can open the file quickly 
 
-<pre><code class="bash">alias idea="subl ~/.ideas.md"  # for Sublime Text users 
-# OR
-alias idea="vim ~/.ideas.md"  # for Vim users 
-</code>
-</pre>
+`alias idea="subl ~/.ideas.md"  # for Sublime Text users`
+
+**OR**
+
+`alias idea="vim ~/.ideas.md"  # for Vim users `
+
+
 
 Now when you have an idea, just type
 
-<pre><code class="bash">$ idea  
-</code>
-</pre>
+`$ idea`
 
 at the command line to open up the `.ideas.md` file in your text editor.
 
 What you put in this file is completely up to you. Mine looks something like this:
 
-<pre><code class="no-highlight">~/.ideas.md
-    
-# Software
-    - doomed startup idea 1
-    - some feature for an open-source project 
-    - doomed startup idea 2
-    - ...
-
-# Blog posts
-    - the .ideas file
-    - stuff about nothing...
-    - ...
-</code>
-</pre>
+<script src="https://gist.github.com/sloria/5895802.js"> </script>
 
 You can do this for todo lists, schedules, or any other text document that you open regularly.
