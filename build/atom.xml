@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Steven Loria</title>
+ <link href="http://www.stevenloria.com/" rel="self"/>
+ <link href="http://www.stevenloria.com"/>
+ <updated>2013-06-30T10:35:08-05:00</updated>
+ <id>http://www.stevenloria.com</id>
+ <author>
+   <name>Steven Loria</name>
+   <email>sloria1@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Lazily-evaluated property pattern in Python</title>
+   <link href="http://www.stevenloria.com/lazy-evaluated-properties-in-python"/>
+   <updated>2013-06-30T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/lazy-evaluated-properties-in-python</id>
+   <content type="html">&lt;p&gt;&lt;a href='https://en.wikipedia.org/wiki/Lazy_evaluation'&gt;Lazy evaluation&lt;/a&gt; is a very useful pattern that can make you code more efficient in many situations. One example of this is instance attributes that take long to compute:&lt;/p&gt;
+&lt;script src='https://gist.github.com/sloria/5895397.js'&gt; &lt;/script&gt;
+&lt;p&gt;This approach may cause initialization to take unnecessarily long, especially when you don&amp;#8217;t always need to access &lt;code&gt;Person#relatives&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A better strategy (the lazy one) would be to get &lt;code&gt;relatives&lt;/code&gt; only when it&amp;#8217;s needed:&lt;/p&gt;
+&lt;script src='https://gist.github.com/sloria/5895446.js'&gt; &lt;/script&gt;
+&lt;p&gt;In this case, the list of relatives is only computed the first time &lt;code&gt;Person#relatives&lt;/code&gt; is accessed. After that, it is stored in &lt;code&gt;Person#_relatives&lt;/code&gt; to prevent repeated evaluations.&lt;/p&gt;
+
+&lt;p&gt;A perhaps more Pythonic approach would be to use a decorator that makes a property lazy-evaluated&lt;/p&gt;
+&lt;script src='https://gist.github.com/sloria/5895501.js'&gt; &lt;/script&gt;
+&lt;p&gt;This removes a lot of boilerplate, especially when an object has many lazily-evaluated properties.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Startup Skepticism::Collected quotes of disillusionment about the startup system</title>
+   <link href="http://www.stevenloria.com/disillusionment-in-startups-collected-quotes"/>
+   <updated>2013-05-29T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/disillusionment-in-startups-collected-quotes</id>
+   <content type="html">&lt;p&gt;This post will be ongoing.&lt;/p&gt;
+
+&lt;h3 id='from_alex_paynes_letter_to_a_young_programmer_considering_a_startup'&gt;From Alex Payne&amp;#8217;s &lt;a href='http://al3x.net/2013/05/23/letter-to-a-young-programmer.html'&gt;Letter To A Young Programmer Considering A Startup&lt;/a&gt;:&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A startup is just a means to an end.&lt;/strong&gt; Consider the end, and don’t seek to revel in the means. What do you care about? Who do you want to help? Does a startup make meeting your goals easier or harder? Where will it leave you when your goal is met? Where will it leave you if it isn’t? &lt;cite&gt;Alex Payne&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;A startup job is the new office job&lt;/strong&gt;&amp;#8230;Startups have been systematized, mythologized, culturally and socially de-risked; reduced down to formulas and recipes. Yet, there is no enduring formula for creativity and rebellion. &lt;strong&gt;When we attempt to factory farm innovation we breed out the very thing we’re trying raise: the creative destruction that stokes and re-stokes the fire of capitalism.&lt;/strong&gt; &lt;cite&gt;Alex Payne&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Startups are part of the system, not a rebellious wrench in the cogs.&lt;/strong&gt;&amp;#8230;The startup system is just another system; an alternative to the corporate ladder with just as many rungs to climb&amp;#8230;The now-perennial celebration of startup-driven disruption begs the question: &lt;strong&gt;if we accept that disruption is even happening, are we better off in the resulting disrupted market?&lt;/strong&gt; Have we solved a problem, or have we shifted the problem elsewhere? &lt;cite&gt;Alex Payne&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Startups have an ongoing interpersonal cost. &lt;cite&gt;Alex Payne&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='from_michael_churchs_dont_waste_your_time_in_crappy_startup_jobs'&gt;From Michael Church&amp;#8217;s &lt;a href='http://michaelochurch.wordpress.com/2012/07/08/dont-waste-your-time-in-crappy-startup-jobs/'&gt;Don&amp;#8217;t waste your time in crappy startup jobs&lt;/a&gt;:&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;7 misconceptions about startups:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A startup will make you rich.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Most engineers have the mistaken belief that the initial offering is only a teaser, and that it will be improved once they “prove themselves”, but it’s pretty rare that this actually happens.&lt;/strong&gt; Moreover, raises and bonuses are very uncommon in startups. It’s typical for high performers to be making the same salary after 3 years as they earned when they started.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;The &amp;#8220;actual&amp;#8221; valuation is several times the official one.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;People love to think they’re smarter than markets. Usually, they aren’t.&lt;/strong&gt; Moreover, the few who are capable of being smarter than markets are not taking (or trying to convince others to take) junior-level positions where the equity allotment is 0.05% of an unproven business.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;If you join a startup early, you&amp;#8217;re a shoe-in for executive positions.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Startups often involve, for engineers, very long hours, rapidly changing requirements, and tight deadlines, which means the quality of the code they write is generally very poor in comparison to what they’d be able to produce in saner conditions&amp;#8230;&lt;strong&gt;It may have been a heroic effort to build such a powerful system in so little time, but from an outside perspective, it becomes an embarrassment.&lt;/strong&gt; It doesn’t make the case for a high-level position.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;In startups, there&amp;#8217;s no boss.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[T]he truth is that almost &lt;strong&gt;everyone has a boss&lt;/strong&gt;, even in startups. CEOs have the board, the VPs and C*Os have the CEO, and the rest have actual, you know, managers. The power relationship between a founder and investor is far more lopsided than that between a typical employee and manager.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Engineers at startups will be &amp;#8220;changing the world.&amp;#8221;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What they are excellent at is finding ways to profit from inexorable, pre-existing trends by doing things that (a) have recently become possible, but that (b) no one had thought of doing (or been able to do) before. By doing so, &lt;em&gt;they often improve the world incrementally: they wouldn’t survive if they didn’t provide value to someone.&lt;/em&gt; &lt;strong&gt;In other words, most of them are application-level concepts that fill out an existing world-changing trend (like the Internet) but not primary drivers.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;If you work at a startup, you can be founder next time around.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;The only thing that a job can offer that will set a person up with the access necessary to be a founder in the future is investor contact&lt;/em&gt;, and a &lt;strong&gt;software engineer who insists on investor contact when joining an already-funded startup is going to be laughed out the door as a “prima donna”.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;You&amp;#8217;ll learn more in a startup.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This last one can be true; I disagree with the contention that it’s &lt;em&gt;always&lt;/em&gt; true&amp;#8230;There’s genuinely interesting work going on at startups, but there’s also a hell of a lot of grunt work, just like anywhere else. &lt;strong&gt;On the whole, I think startups invest less in career development than more established companies&lt;/strong&gt;&amp;#8230;Startups are generally too busy fighting fires, marketing themselves, and expanding to have time to worry about whether their employees are learning.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;cite&gt;Michael Church&lt;/cite&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In 2012, is there “a bubble” in internet startups? Yes and no. In terms of valuations, I don’t think there’s a bubble&amp;#8230;Where &lt;strong&gt;there is &lt;em&gt;undeniably&lt;/em&gt; a bubble is in the extremely high value that young talent is ascribing to subordinate positions at mediocre startups.&lt;/strong&gt; &lt;cite&gt;Michael Church&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='from_aza_raskins_psychological_pitfalls_and_lessons_of_a_designerfounder'&gt;From Aza Raskin&amp;#8217;s &lt;a href='http://www.azarask.in/blog/post/psychological-pitfalls-and-lessons-of-a-designer-founder/'&gt;Psychological Pitfalls and Lessons of a Designer-Founder&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;If you love doing something, under no condition should you start a VC-backed company to do more of it.&lt;/strong&gt; You won’t. You are going to spend all of your time recruiting, fundraising, recruiting, aligning team vision, recruiting, and figuring out which fires you can safely ignore. &lt;cite&gt;Aza Raskin&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;To maintain your psychological health, &lt;strong&gt;you’ll need to learn how to shift the fufillment you get from making to the fufillment of enabling a team to make.&lt;/strong&gt; You’ll be making vicariously, not making directly. You’ll have to come to terms and internalize it or else your lack of emotional fufillment will trickle down to your team &lt;cite&gt;Aza Raskin&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You’ll live with knowing that you are personally judged based upon your company’s performance. That your reputation is tied to your company’s reputation. You’ll no longer be judged on your own work, but your team’s work. It will make you want to get too directly involved in the design. And, as we know, that’s dangerous. &lt;strong&gt;Be aware that ego can and will get in the way and be ready to fight it.&lt;/strong&gt; &lt;cite&gt;Aza Raskin&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='cited'&gt;Cited&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://al3x.net/2013/05/23/letter-to-a-young-programmer.html'&gt;Letter To A Young Programmer Considering A Startup&lt;/a&gt; - Alex Payne&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://michaelochurch.wordpress.com/2012/07/08/dont-waste-your-time-in-crappy-startup-jobs/'&gt;Don&amp;#8217;t waste your time in crappy startup jobs&lt;/a&gt; - Michael Church&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.azarask.in/blog/post/psychological-pitfalls-and-lessons-of-a-designer-founder/'&gt;Psychological Pitfalls and Lessons of a Designer-Founder&lt;/a&gt; - Aza Raskin&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Python Best Practice Patterns by Vladimir Keleshev (Notes)</title>
+   <link href="http://www.stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes"/>
+   <updated>2013-05-09T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes</id>
+   <content type="html">&lt;p&gt;These are my notes from Vladimir Keleshev&amp;#8217;s talk entitled &amp;#8220;Python Best Practice Patterns&amp;#8221;, given on May 2, 2013 at the Python Meetup in Denmark. The original video is &lt;a href='http://youtu.be/GZNUfkVIHAY'&gt;here&lt;/a&gt; (about 38 minutes long).&lt;/p&gt;
+
+&lt;h2 id='composed_method'&gt;Composed method&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Divide program into methods that perform one task - Keep &lt;em&gt;all&lt;/em&gt; operation in a method at the same level of abstraction&lt;/li&gt;
+
+&lt;li&gt;Use many methods only a few lines long&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Bad
+class Boiler:
+    def safety_check(self):
+        # Convert fixed-point floating point
+        temperature = self.modbus.read_holding()
+        pressure_psi = self.abb_f100.register / F100_FACTOR
+        if psi_to_pascal(pressure_psi) &gt; MAX_PRESSURE:
+            if temperature &gt; MAX_TEMPERATURE:
+                # Shutdown!
+                self.pnoz.relay[15] &amp;amp;= MASK_POWER_COIL
+                self.pnoz.port.write('$PL,15\0')
+                sleep(RELAY_RESPONSE_DELAY)
+                # Successful shutdown?
+                if self.pnoz.relay[16] &amp;amp; MASK_POWER_OFF:
+                    # Play alarm
+                    with open(BUZZER_MP3_FILE) as f:
+                        play_sound(f.read())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Different levels of abstraction: bitmaps, filesystem operations, playing sounds&amp;#8230;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+class Boiler:
+    def safety_check(self):
+        if any([self.temperature &gt; MAX_TEMPERATURE,
+                self.pressure &gt; MAX_PRESSURE]):
+            if not self.shutdown():
+                self.alarm()
+
+    def alarm(self):
+        with open(BUZZER_MP3_FILE) as f:
+            play_sound(f.read())
+
+    @property
+    def pressure(self):
+        pressure_psi = abb_f100.reguster / F100_FACTOR
+        return psi_to_pascal(pressure_psi)
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;safety_check&lt;/code&gt; deals with temp and pressure&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;alarm&lt;/code&gt; deals with files and sound&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;pressure&lt;/code&gt; deals with bits and converting them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='constructor_method'&gt;Constructor method&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;provide constructors that create well-formed instances - Pass all required parameters to them&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Bad
+point = Point()
+point.x = 12
+point.y = 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;At initiation &lt;code&gt;point&lt;/code&gt; is not well-formed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+point = Point(x=12, y=5)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Can use class methods to make multiple constructors - Example: Using Cartesian or polar coordinates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;class Point:
+    def __init_(self, x, y):
+        self.x, self.y = x, y
+
+    @classmethod
+    def polar(class_, r, theta):
+        return class_(r * cos(theta),
+                        r * sin(theta))
+
+point = Point.polar(r=13, theta-22.6)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='method_objects'&gt;Method objects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How do you code a method where many lines of code share many arguments and temporary variables?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;def send_task(self, task, job, obligation):
+    ...
+    processed = ...
+    ...
+    copied = ...
+    ...
+    executed = ...
+    100 more lines
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Can&amp;#8217;t be solved by making many small methods (would use more code)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Solution
+class TaskSender:
+    def __init__(self, task, job obligation):
+        self.task = task
+        self.job = job
+        self.obligation = obligation
+        self.processed = []
+        self.copied = []
+        self.executed = []
+
+    def __call__(self):
+        self.prepare()
+        self.process()
+        self.execute()
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='execute_around_method_in_python_context_manager'&gt;Execute around method (in Python: Context manager)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How do you represent pairs of actions that should be taken together?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;f = open('file.txt', 'w')
+f.write('hi')
+f.close()
+
+# Better
+with open('file.txt', 'w') as f:
+    f.write('hi')   
+
+with pytest.raises(ValueError):
+    int('hi')
+
+with SomeProtocol(host, port) as protocol:
+    protocol.send(['get', signal])
+    result = protocol.receive() 
+
+class SomeProtocol:
+    def __init__(self, host, port):
+        self.host, self.port = host, port
+
+    def __enter__(self):
+        self._client = socket()
+        self._client.connect((self.host,
+                                self.port))
+
+    def __exit__(self, exception, value, traceback):
+        self._client.close()
+
+    def send(self, payload): ...
+
+    def receive(self): ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='debug_printing_method'&gt;Debug printing method&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;__str__&lt;/code&gt; for users - e.g. &lt;code&gt;print(point)&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;__repr__&lt;/code&gt; for debugging/interactive mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='method_comment'&gt;Method comment&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;small methods can be more effective than comments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Meh
+if self.flags &amp;amp; 0b1000:  # Am I visible?
+    ...
+
+# Better
+...
+@property
+def is_visible(self):
+    return self.flags &amp;amp; 0b1000
+
+if self.is_visible:
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='choosing_message'&gt;Choosing message&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Bad
+if type(entry) is Film:
+    responsible = entry.producer
+else:
+    responsible = entry.author
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Shouldn&amp;#8217;t use type() or instanceof() in conditional &amp;#8211;&amp;gt; smelly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+class Film:
+    ...
+    @property
+    def responsible(self):
+        return self.producer
+
+entry.responsible
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='intention_revealing_message'&gt;Intention revealing message&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How do you communicate your intent when implementation is simple?&lt;/li&gt;
+
+&lt;li&gt;Use for methods that do the same thing (for readability)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Meh
+class ParagraphEditor:
+    ...
+    def highlight(self, rectangle):
+        self.reverse(rectangle)
+
+# Better
+class ParagraphEditor:
+    ...
+    highlight = reverse  # More readable, more composable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='constant_method_constant_class_variable'&gt;Constant method (constant class variable)&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Bad
+_DEFAULT_PORT = 1234
+
+class SomeProtocol:
+    ...
+    def __enter__(self):
+        self._client = socket()
+        self._client.connect(
+            (self.host,
+            self.port or _DEFAULT_PORT)
+        )
+        return self  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to subclass SomeProtocol, you would have to overwrite very method!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+class SomeProtocol:
+    _default_port = 1234
+    ...
+    def __enter__(self):
+        self._client = socket()
+        self._client.connect(
+            (self.host,
+            self.port or self._default_port))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Depends if you are designing to make your class subclassable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='direct_and_indirect_variable_access'&gt;Direct and indirect variable access&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Direct - no need for getters and setters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;
+class Point:
+    def __init__(self, x, y):
+        self.x, self.y = x, y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Sometimes need more flexibility &amp;#8211;&amp;gt; use properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;
+class Point:
+    def __init__(self, x, y):
+        self._x, self._y = x, y
+
+    @property
+    def x(self):
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        self._x = value
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='enumeration_iteration_method'&gt;Enumeration (iteration) method&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Bad
+class Department:
+    def __init__(self, *employees):
+        self.employees = employees
+
+for employee in department.employees:
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Can&amp;#8217;t change type of collection - e.g. can&amp;#8217;t change employees from a list to a set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+class Department:
+    def __init__(self, *employees):
+        self._employees = employees
+
+    def __iter__(self):
+        return iter(self._employees)
+
+for employee in department:  # More readable, more composable
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='temporary_variable'&gt;Temporary variable&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Meh
+class Rectangle:
+    def bottom_right(self):
+        return Point(self.left + self.width,
+                    self.top + self.height)
+
+# Better to use temporary variables for readability
+class Rectangle:
+    ...
+    def bottom_right(self):
+        right = self.left + self.width
+        bottom = self.top + self.height
+        return Point(right, bottom)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='sets'&gt;Sets&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Can often use sets instead of combination of for loops&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Set
+---
+
+item in a_set
+item not in a_set
+
+a_set &amp;lt;= other
+a_set.is_subset(other)
+
+a_set | other
+a_set.union(other)
+
+a_set &amp;amp; other
+a_set.intersection(other)
+
+a_set - other
+a_set.difference(other)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='equality_method'&gt;Equality method&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;
+obj == obj2
+obj1 is obj2
+
+class Book:
+    ...
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            return False
+        return (self.author == other.author and 
+                self.title == other.title)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Probably the only case to check &lt;code&gt;isinstance()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='hashing_method'&gt;Hashing method&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;class Book:
+    ...
+    def __hash__(self):
+        return hash(self.author) ^ hash(self.other)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='sorted_collection'&gt;Sorted collection&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;class Book:
+    ...
+    def __lt__(self):
+        return (self.author &amp;lt; self.author and
+                self.title &amp;lt; self.title)    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='concatenation'&gt;Concatenation&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;class Config:
+    def __init__(self, **entries):
+        self.entries = entries
+
+    def __add__(self, other):
+        entries = (self.entries.items() + 
+                    other.entries.items())
+        return Config(**entries)
+default_config = Config(color=False, port=8080)
+config = default_config + Config(color=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='simple_enumeration_parameter'&gt;Simple enumeration parameter&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When you can&amp;#8217;t come up with an iteration param that makes sense, just use &lt;code&gt;each&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Awkward
+for options_shortcut in self.options_shortcuts:
+    options_shortcut.this()
+    options_shortcut.that()
+
+# Better
+for each in self.options_shortcuts:
+    each.this()
+    each.that()    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='cascades'&gt;Cascades&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Instead of writing methods without return values, make them return self - allows cascading of methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Instead of this
+self.release_water()
+self.shutdown()
+self.alarm()
+
+class Reactor:
+    ...
+    def release_water(self):
+        self.valve.open()
+        return self
+
+self.release_water().shutdown().alarm()    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id='interesting_return_value'&gt;Interesting return value&lt;/h2&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Meh
+def match(self, items):
+    for each in enumerate(items):
+        if each.match(self):
+            return each
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Is this supposed to reach the end? Is this a bug?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class='python'&gt;# Better
+def match(self, items):
+    for each in enumerate(items):
+        if each.match(self):
+            reutnr each
+    return None
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Explicit better than implicit&lt;/li&gt;
+
+&lt;li&gt;Include return value if it&amp;#8217;s interesting (even if it&amp;#8217;s &lt;code&gt;None&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='further_reading'&gt;Further reading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.amazon.com/Smalltalk-Best-Practice-Patterns-ebook/dp/B00BBDLIME/ref=dp_kinw_strp_1'&gt;Smalltalk Best Practice Patterns&lt;/a&gt; - Not for Smalltalk: applicable to Python, Ruby, and many other languages&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>The .ideas file</title>
+   <link href="http://www.stevenloria.com/the-ideas-file"/>
+   <updated>2013-04-15T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/the-ideas-file</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;The best way to a good idea is to have lots of ideas. &lt;cite&gt;Linus Pauling&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you&amp;#8217;re a regular Terminal user, chances are you&amp;#8217;ve had a stroke of inspiration while your command prompt was up.&lt;/p&gt;
+
+&lt;p&gt;I find plain text in &lt;a href='http://daringfireball.net/projects/markdown/'&gt;Markdown&lt;/a&gt; to be the quickest way to record these spontaneous ideas. Here&amp;#8217;s one way to do it:&lt;/p&gt;
+
+&lt;p&gt;Create a hidden file called &lt;code&gt;.ideas.md&lt;/code&gt; in your home directory.&lt;/p&gt;
+&lt;pre&gt;&lt;code class='bash'&gt;$ touch ~/.ideas.md      
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Add an alias to your &lt;code&gt;.bash_profile&lt;/code&gt; or &lt;code&gt;.zshrc&lt;/code&gt; file so you can open the file quickly&lt;/p&gt;
+&lt;pre&gt;&lt;code class='bash'&gt;alias idea=&quot;subl ~/.ideas.md&quot;  # for Sublime Text users 
+# OR
+alias idea=&quot;vim ~/.ideas.md&quot;  # for Vim users 
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Now when you have an idea, just type&lt;/p&gt;
+&lt;pre&gt;&lt;code class='bash'&gt;$ idea  
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;at the command line to open up the &lt;code&gt;.ideas.md&lt;/code&gt; file in your text editor.&lt;/p&gt;
+
+&lt;p&gt;What you put in this file is completely up to you. Mine looks something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class='no-highlight'&gt;~/.ideas.md
+    
+# Software
+    - doomed startup idea 1
+    - some feature for an open-source project 
+    - doomed startup idea 2
+    - ...
+
+# Blog posts
+    - the .ideas file
+    - stuff about nothing...
+    - ...
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;You can do this for todo lists, schedules, or any other text document that you open regularly.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Microprojects</title>
+   <link href="http://www.stevenloria.com/microprojects"/>
+   <updated>2013-03-28T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/microprojects</id>
+   <content type="html">&lt;p&gt;It was UW-Madison&amp;#8217;s spring break this past week, so I finally had some time to see family, friends, and improve my programming chops&amp;#8211;something I desperately needed to do but haven&amp;#8217;t had nearly enough time for because of my college classes. Here are a few things I finished in the past 5 days:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://reversr.herokuapp.com'&gt;&lt;strong&gt;Reversr&lt;/strong&gt;&lt;/a&gt; &lt;a href='http://www.github.com/sloria/reversr'&gt;[code]&lt;/a&gt; - Since I&amp;#8217;ve worked primarily with full-stack web frameworks, i.e. Django and Rails, I wanted to give their micro-sized counterparts, Flask and Sinatra, a fair shot. I also needed a reason to learn the &lt;a href='https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html'&gt;Web Audio API&lt;/a&gt;. So I made an app with &lt;a href='http://www.github.com/sloria/reversr'&gt;both&lt;/a&gt; &lt;a href='http://www.github.com/sloria/reversr-artanis'&gt;frameworks&lt;/a&gt;&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; that just records and plays back audio (in reverse, of course) in a browser.&lt;sup id='fnref:2'&gt;&lt;a href='#fn:2' rel='footnote'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Experimenting with &lt;a href='http://opencv.willowgarage.com/wiki/'&gt;OpenCV&lt;/a&gt; and &lt;a href='http://simplecv.org/'&gt;SimpleCV&lt;/a&gt;&lt;/strong&gt; - Tracking mice and recording their huddling behavior.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;My first phylogenetic analysis&lt;/strong&gt; - &lt;a href='http://en.wikipedia.org/wiki/Tarsiers'&gt;Tarsiers&lt;/a&gt; are the cutest evolutionary mystery.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Online classes&lt;/strong&gt; - Finished about a third of &lt;a href='https://www.udacity.com/course/cs212'&gt;Design of Computer Programs&lt;/a&gt; (Udacity) and the first week of &lt;a href='https://class.coursera.org/progfun-002/class/index'&gt;Functional Programming in Scala&lt;/a&gt; (Coursera). Both Norvig and Odersky offer great introductions to functional programming.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://stevenloria.com'&gt;&lt;strong&gt;This website&lt;/strong&gt;&lt;/a&gt; - Thanks to &lt;a href='http://jekyllbootstrap.com/'&gt;Jekyll Bootstrap&lt;/a&gt; and &lt;a href='http://pages.github.com/'&gt;Github Pages&lt;/a&gt;, this was amazingly simple.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Similar in spirit to &lt;a href='http://adambard.com/blog/PHP-ruby-python-clojure-webapps-by-example/'&gt;this&lt;/a&gt;, except that my purpose was solely to teach myself rather than provide good examples of the different languages.&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;p&gt;I&amp;#8217;ve found that one of the most efficient ways for me to start learning a new language/framework/etc. is to build a small, single-purpose app using it. I don&amp;#8217;t mean an app from a tutorial (e.g. the ubiquitous 20-minute blog) but an app that I actually find interesting. The app can be embarrassingly small and messy, as Reversr was, and I still end up &lt;strong&gt;learning more in less time than it takes for to find &amp;#8221;&lt;em&gt;the best tutorial for learning X&lt;/em&gt;&amp;#8221; on Google.&lt;/strong&gt;&lt;/p&gt;
+&lt;a href='#fnref:2' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>A professional reinvents himself - Steven Pressfield</title>
+   <link href="http://www.stevenloria.com/a-professional-reinvents-himself"/>
+   <updated>2013-03-24T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/a-professional-reinvents-himself---pressfield</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;A professional reinvents himself&amp;#8230;the professional does not permit himself to become hidebound within one incarnation, however comfortable or successful. Like a transmigrating soul, he shucks his outworn body and dons a new one. He continues his journey. &lt;cite&gt;Steven Pressfield, The War of Art&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>My MOOC education 2013 (Updated May 26, 2013)</title>
+   <link href="http://www.stevenloria.com/my-mooc-education-2013"/>
+   <updated>2013-03-23T00:00:00-05:00</updated>
+   <id>http://www.stevenloria.com/my-mooc-education-2013</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Updated: May 26, 2013&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In progress&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data Science (Coursera)&lt;/li&gt;
+
+&lt;li&gt;The Design of Computer Programs (Udacity)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Near future&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linear Algebra (Coursera)&lt;/li&gt;
+
+&lt;li&gt;Intro to Databases (Stanford)&lt;/li&gt;
+
+&lt;li&gt;Machine Learning (Coursera)&lt;/li&gt;
+
+&lt;li&gt;Mathematics in Biology (Udemy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Completed&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data Analysis (Coursera)&lt;/li&gt;
+
+&lt;li&gt;HTML5, CSS3, jQuery, and Backbone.js courses (CodeSchool)&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ 
+</feed>

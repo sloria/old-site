@@ -29,8 +29,8 @@ This post will be ongoing.
 > 3. If you join a startup early, you're a shoe-in for executive positions.
 > > Startups often involve, for engineers, very long hours, rapidly changing requirements, and tight deadlines, which means the quality of the code they write is generally very poor in comparison to what they’d be able to produce in saner conditions...**It may have been a heroic effort to build such a powerful system in so little time, but from an outside perspective, it becomes an embarrassment.** It doesn’t make the case for a high-level position.
 > 4. In startups, there's no boss.
-> > The truth is that almost **everyone has a boss**, even in startups. CEOs have the board, the VPs and C*Os have the CEO, and the rest have actual, you know, managers.
-> > ...[T]he power relationship between a founder and investor is far more lopsided than that between a typical employee and manager.
+> > \[T\]he truth is that almost **everyone has a boss**, even in startups. CEOs have the board, the VPs and C\*Os have the CEO, and the rest have actual, you know, managers.
+> > The power relationship between a founder and investor is far more lopsided than that between a typical employee and manager.
 > 5. Engineers at startups will be "changing the world."
 > >  What they are excellent at is finding ways to profit from inexorable, pre-existing trends by doing things that (a) have recently become possible, but that (b) no one had thought of doing (or been able to do) before. By doing so, *they often improve the world incrementally: they wouldn’t survive if they didn’t provide value to someone.* **In other words, most of them are application-level concepts that fill out an existing world-changing trend (like the Internet) but not primary drivers.**
 > 6. If you work at a startup, you can be founder next time around.
