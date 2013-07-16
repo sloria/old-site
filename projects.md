@@ -5,7 +5,7 @@ description: ""
 ---
 {% include JB/setup %}
 
-# Projects
+# Recent Projects
 
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 
