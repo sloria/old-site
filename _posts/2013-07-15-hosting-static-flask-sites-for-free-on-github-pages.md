@@ -11,11 +11,11 @@ This past weekend, I released [KillTheYak.com](http://killtheyak.com/), a websit
 
 Static Flask sites are a big win because:
 
-- They're fast. You can't really get much faster than just serving plain HTML and CSS.
+- They're fast.
 - If you need your site to be dynamic in the future, the transition will be easy.
 - There are well-developed extensions for doing this. Here I'll demonstrate [Frozen-Flask][] (for building static content) and [Flask-FlatPages][] (for writing pages in Markdown).
 
-You can view the source for the example site here: [sloria/flask-ghpages-example][example].
+Source for the example site here: [sloria/flask-ghpages-example][example]. Live site here: [http://stevenloria.com/flask-ghpages-example][live-example]
 
 ## App structure
 
@@ -27,16 +27,16 @@ You can view the source for the example site here: [sloria/flask-ghpages-example
 
 Key bits:
 
-- L19: We tell Frozen-Flask to build the static content to the project root instead of the default `build/` directory. 
+- L19: Tell Frozen-Flask to build the static content to the project root instead of the default `build/` directory. 
 - L22: We also need to explicitly set `FREEZER_BASE_URL` since Github Pages hosts your repo pages on `http://username.github.com/your-reponame`. 
 - L23: Don't delete all your app files!
-- L26-27: We tell FlatPages to look for `.md` files in the `project/pages/` directory.
+- L26-27: Tell FlatPages to look for `.md` files in the `project/pages/` directory.
 
 ### project/app.py
 
 <script src="https://gist.github.com/sloria/6004129.js"> </script>
 
-- This is where the Flask app, pages, and freezer instances live.
+- This is where the Flask `app`, `pages`, and `freezer` instances live.
 
 ### project/views.py
 
