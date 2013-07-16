@@ -7,7 +7,7 @@ description: ""
 
 # Projects
 
-**[KillTheYak.com][KillTheYak]**: Collection of simple guides for reducing [yak shaving](https://en.wiktionary.org/wiki/yak_shaving). 
+**[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 
 **[TextBlob](https://github.com/sloria/TextBlob)**: Simple, Pythonic text processing. Includes part-of-speech tagging, noun phrase parsing, sentiment analysis, and more.
 
