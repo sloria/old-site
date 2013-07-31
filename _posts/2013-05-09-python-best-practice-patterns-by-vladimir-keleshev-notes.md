@@ -7,6 +7,8 @@ tags: [programming, python]
 ---
 {% include JB/setup %}
 
+*Edit July 30, 2013*: Fixed typo in Sorted Collection gist. `__lt__(self, other)` needs two arguments. Thanks to Tiago Oliveira for catching this
+
 These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice Patterns", given on May 2, 2013 at the Python Meetup in Denmark. The original video is [here](http://youtu.be/GZNUfkVIHAY) (about 38 minutes long).
 
 ## Composed method
