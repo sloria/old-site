@@ -15,7 +15,7 @@ I'm an amateur at everything in a constant struggle to [turn pro](/a-professiona
 
 The easiest way to contact me is by [email][email].
 
-You can also find me on [Github][github] and [LinkedIn][linkedin].
+You can also find me on [Github][github] and [LinkedIn][linkedin]. I am no good at [Twitter][].
 
 
 [email]: mailto:{{ site.author.email }}
@@ -23,3 +23,4 @@ You can also find me on [Github][github] and [LinkedIn][linkedin].
 [waisman]: http://brainimaging.waisman.wisc.edu/
 [github]: http://www.github.com/{{ site.author.github }}
 [linkedin]: http://www.linkedin.com/in/{{ site.author.linkedin }}
+[Twitter]: https://www.twitter.com/{{ site.author.twitter }}

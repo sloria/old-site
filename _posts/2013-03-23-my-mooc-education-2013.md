@@ -11,14 +11,14 @@ tags: [education]
 
 **In progress**
 
-- Data Science (Coursera)
+- Linear Algebra (Coursera)
 - The Design of Computer Programs (Udacity)
 
 **Near future**
-- Linear Algebra (Coursera)
 - Intro to Databases (Stanford)
 - Machine Learning (Coursera)
 - Mathematics in Biology (Udemy)
+- Data Science (Coursera)
 
 **Completed**
 - Data Analysis (Coursera)
