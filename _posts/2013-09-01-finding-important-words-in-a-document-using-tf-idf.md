@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Finding Important Words in a Document using TF-IDF"
-description: ""
+title: "Finding Important Words in Text Using TF-IDF"
+description: "A tutorial on how to use the TF-IDF algorithm to find important words in text. Uses Python and TextBlob."
 category: programming
 tags: [python, textblob, data-analysis]
 ---
 {% include JB/setup %}
 
-Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you think.
+Another [TextBlob][] release (0.6.1, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), another quick tutorial. This one's on using the [TF-IDF][] algorithm to find the most important words in a text document. It's simpler than you might think.
 
 ## What is TF-IDF?
 
@@ -22,7 +22,7 @@ Therefore, common words like "the" and "for", which appear in many documents, wi
 
 ## In code
 
-The code here is tested on Python 3 with TextBlob 0.6.1. If you're using Python 2, you'll probably need to add `from __future__ import division, unicode_literals` at the top.
+The code here is tested on Python 3 with [TextBlob 0.6.1][TextBlob]. If you're using Python 2, you'll probably need to add `from __future__ import division, unicode_literals` at the top.
 
 <pre><code class="python">import math
 from text.blob import TextBlob as tb
@@ -42,9 +42,9 @@ def tfidf(word, blob, bloblist):
 
 14 lines and we're already [flying](http://xkcd.com/353/).
 
-* `tf(word, blob)` computes "term frequency" which is the number of times a word appears in a document `blob`. We use TextBlob for breaking up the text into words and getting the word counts.
-* `n_containing(word, bloblist)` returns the number of documents containing `word`.
-* `idf(word, bloblist)` computes "inverse document frequency" which measures how common a word is among all documents in `bloblist`. The more common a word is, the lower its `idf`. We take the ratio of the total number of documents to the number of documents containing `word`, then take the `log` of that. Add 1 to the divisor to prevent zero division.
+* `tf(word, blob)` computes "term frequency" which is the number of times a word appears in a document `blob`, normalized by dividing by the total number of words in `blob`. We use TextBlob for breaking up the text into words and getting the word counts.
+* `n_containing(word, bloblist)` returns the number of documents containing `word`. A [generator expression](http://www.python.org/dev/peps/pep-0289/) is passed to the `sum()` function.
+* `idf(word, bloblist)` computes "inverse document frequency" which measures how common a word is among all documents in `bloblist`. The more common a word is, the lower its `idf`. We take the ratio of the total number of documents to the number of documents containing `word`, then take the `log` of that. Add 1 to the divisor to prevent division by zero.
 * `tfidf(word, blob, bloblist)` computes the TF-IDF score. It is simply the product of `tf` and `idf`.
 
 Now to test it out on some real documents taken from Wikipedia.
@@ -83,7 +83,7 @@ for i, blob in enumerate(bloblist):
         print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
 </code></pre>
 
-For each document, we store the TF-IDF scores in a dictionary `scores` mapping `word => score` using a [dictionary comprehension](http://www.python.org/dev/peps/pep-0274/). We then sort the words by their scores and output the top 3 words.
+For each document, we store the TF-IDF scores in a dictionary `scores` mapping `word => score` using a [dict comprehension](http://www.python.org/dev/peps/pep-0274/). We then sort the words by their scores and output the top 3 words.
 
 The full script is [here](https://gist.github.com/6407257). The output of the program is:
 
