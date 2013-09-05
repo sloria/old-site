@@ -7,6 +7,8 @@ tags: [programming, python]
 ---
 {% include JB/setup %}
 
+*Edit September 5, 2013*: Fixed error in Sorted Collection. Thanks Frank Sievertsen.
+
 *Edit September 4, 2013*: Fixed typo in Choosing Message gist. `instanceof()` should be `isinstance()`. Thanks to `richardborcsik` for catching this.
 
 *Edit July 30, 2013*: Fixed typo in Sorted Collection gist. `__lt__(self, other)` needs two arguments. Thanks to Tiago Oliveira for catching this.
