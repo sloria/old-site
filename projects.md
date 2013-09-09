@@ -15,6 +15,12 @@ description: ""
 
 **[Sqk](http://www.github.com/sloria/usv)**: Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.
 
+### Tiny Utilities That Do *One Thing Well*
+
+**[tbpaste](https://www.github.com/sloria/tbpaste)**: Command line utility that runs sentiment analysis on the contents of your clipboard.
+
+**[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
+
 You can find more of my projects at my [Github profile][github].
 
 [github]: http://www.github.com/{{ site.author.github }}
