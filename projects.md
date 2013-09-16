@@ -17,6 +17,8 @@ description: ""
 
 ### Tiny Utilities That Do *One Thing Well*
 
+**[TextFeel](https://textfeel.herokuapp.com)**: A live, web-based sentiment analyzer.
+
 **[tbpaste](https://www.github.com/sloria/tbpaste)**: Command line utility that runs sentiment analysis on the contents of your clipboard.
 
 **[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
