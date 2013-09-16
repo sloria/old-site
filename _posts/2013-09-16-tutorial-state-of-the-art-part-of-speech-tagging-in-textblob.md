@@ -7,6 +7,30 @@ tags: [programming, python, textblob, nlp]
 ---
 {% include JB/setup %}
 
+<style media="screen">
+    /* Tables*/
+table {
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+</style>
+
 Following the tradition of writing a short tutorial with each new [TextBlob][] release (0.6.3, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), here's an introduction to TextBlob's first outside code contribution from Matthew Honnibal, a.k.a. [syllog1sm](https://github.com/syllog1sm): a part-of-speech tagger based on the [Averaged Perceptron][Perceptron] algorithm which is faster and more accurate than [NLTK](http://nltk.org/)'s and [pattern](http://www.clips.ua.ac.be/pages/pattern-en)'s default implementations.
 
 Matthew Honnibal wrote a clear and detailed blog post about the Averaged Perception and his implementation [here][PyAP]. For this reason, this post will focus on how to get and use the tagger without providing implementation details.
