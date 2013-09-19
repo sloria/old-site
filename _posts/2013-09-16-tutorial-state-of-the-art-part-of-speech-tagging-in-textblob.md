@@ -31,11 +31,17 @@ table td {
 }
 </style>
 
-Following the tradition of writing a short tutorial with each new [TextBlob][] release (0.6.3, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), here's an introduction to TextBlob's first outside code contribution from Matthew Honnibal, a.k.a. [syllog1sm](https://github.com/syllog1sm): a part-of-speech tagger based on the [Averaged Perceptron][Perceptron] algorithm which is faster and more accurate than [NLTK](http://nltk.org/)'s and [pattern](http://www.clips.ua.ac.be/pages/pattern-en)'s default implementations.
+Following the tradition of writing a short tutorial with each new [TextBlob][] release (0.6.3, [changelog](https://textblob.readthedocs.org/en/latest/changelog.html)), here's an introduction to TextBlob's first outside code contribution from Matthew Honnibal, a.k.a. [syllog1sm](https://github.com/syllog1sm): a part-of-speech tagger based on the [Averaged Perceptron][Perceptron] algorithm which is **faster and more accurate than [NLTK](http://nltk.org/)'s and [pattern](http://www.clips.ua.ac.be/pages/pattern-en)'s default implementations**.
 
 Matthew Honnibal wrote a clear and detailed blog post about the Averaged Perception and his implementation [here][PyAP]. For this reason, this post will focus on how to get and use the tagger without providing implementation details.
 
 ## Getting the `PerceptronTagger`
+
+-----
+
+**UPDATE September 19, 2013**: The installation process for the `PerceptronTagger` will be simplified in TextBlob 0.7.0 once the extension system is in place (should be released within the next couple of weeks). If you want to try it out early, [install the dev version of TextBlob](https://textblob.readthedocs.org/en/dev/install.html#get-the-bleeding-edge-version) then install the `textblob-aptagger` extension [here](https://github.com/sloria/textblob-aptagger). Otherwise, TextBlob 0.6.3 users can use the instructions below.
+
+-----
 
 First, upgrade to the latest version of `TextBlob`.
 

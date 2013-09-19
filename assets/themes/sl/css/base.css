@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  margin: 0px auto;
-  -webkit-font-smoothing: antialiased; }*/
-
-
 body {
 font-family: "Raleway", Helvetica, Arial, "Lucida Grande", sans-serif;
 font-weight: 400;
@@ -113,12 +107,6 @@ h1, h2, h3, h4 {
     padding: 3px;
     border: 1px solid #eeeeee;
     max-width: 100%; }
-  .content hr {
-    border: 0;
-    height: 6px;
-    background-image: url("/images/hr.png");
-    background-repeat: repeat-x;
-    margin: 2em 3em; }
   .content li {
     margin-bottom: 10px;
     line-height: 1.5em; }
