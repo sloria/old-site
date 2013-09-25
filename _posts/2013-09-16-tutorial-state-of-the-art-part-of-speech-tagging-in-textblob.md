@@ -38,7 +38,7 @@ Matthew Honnibal wrote a clear and detailed blog post about the Averaged Percept
 ## Getting the `PerceptronTagger`
 
 -----
-**UPDATE September 25, 2013**: TextBlob 0.7.0 is released. Instead of following the instructions below for getting the PerceptronTagger, just run
+**UPDATE September 25, 2013**: TextBlob 0.7.0 and the textblob-aptagger 0.1.0 extension are released. Instead of following the instructions below for getting the PerceptronTagger, just run
 
 <pre><code class="bash">$ pip install -U textblob textblob-aptagger</code></pre>
 
@@ -47,7 +47,8 @@ Matthew Honnibal wrote a clear and detailed blog post about the Averaged Percept
 **UPDATE September 19, 2013**: The installation process for the `PerceptronTagger` will be simplified in TextBlob 0.7.0 once the extension system is in place (should be released within the next couple of weeks). If you want to try it out early, [install the dev version of TextBlob](https://textblob.readthedocs.org/en/dev/install.html#get-the-bleeding-edge-version) then install the `textblob-aptagger` extension [here](https://github.com/sloria/textblob-aptagger). Otherwise, TextBlob 0.6.3 users can use the instructions below.
 
 -----
-
+<s>
+    
 First, upgrade to the latest version of `TextBlob`.
 
 <pre><code class="bash">$ pip install -U textblob</code></pre>
@@ -55,8 +56,6 @@ First, upgrade to the latest version of `TextBlob`.
 The `PerceptronTagger` requires a `trontagger.pickle` file that is not included in the TextBlob distribution (in order to keep the distribution lightweight).
 
 The file can be downloaded from [TextBlob's Releases page](https://github.com/sloria/TextBlob/releases) on Github [^1].
-
-<a href="https://github.com/sloria/TextBlob/releases"><img src="https://dl.dropboxusercontent.com/u/1693233/blog/releases.png" alt="TextBlob releases page"></a>
 
 After downloading, the file, unzip it. On MacOSX, this can be done by double-clicking the file. Or you can use the shell:
 
@@ -69,13 +68,14 @@ You should now have `trontagger.pickle`. You need to put this in your `TextBlob`
 This will output the TextBlob directory. Place `trontagger.pickle` in this directory.
 
 You're all set to use the tagger!
+</s>
 
 ## A Short Intro to the `Blobber` Class
 
 Let's start tagging some text. To do this, you pass an instance of the tagger into the `TextBlob` constructor.
 
 <pre><code class="python">from text.blob import TextBlob as tb
-from text.taggers import PerceptronTagger
+from textblob_aptagger import PerceptronTagger
 
 ap_tagger = PerceptronTagger()
 # This is verbose; we'll see a DRYer version later
@@ -90,7 +90,7 @@ print(b2.tags)
 However, passing the tagger can get repetitive when making many `TextBlobs`. To avoid this, we can use the ``Blobber`` class, which is a "factory" that creates `TextBlobs` that share the same models. Let's rewrite the above code using a `Blobber`.
 
 <pre><code class="python">from text.blob import Blobber
-from text.taggers import PerceptronTagger
+from textblob_aptagger import PerceptronTagger
 
 tb = Blobber(pos_tagger=PerceptronTagger())
 b1 = tb("Beautiful is better than ugly.")
@@ -139,7 +139,8 @@ We then define an `accuracy()` method that is passed our test dataset and an ins
 
 <pre><code class="python">import string
 from text.blob import Blobber
-from text.taggers import PerceptronTagger, PatternTagger, NLTKTagger
+from text.taggers import PatternTagger, NLTKTagger
+from textblob_aptagger import PerceptronTagger
 
 def accuracy(test_set, tagger):
     n_correct = 0
