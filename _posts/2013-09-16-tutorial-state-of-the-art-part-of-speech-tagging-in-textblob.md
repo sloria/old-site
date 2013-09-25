@@ -38,6 +38,11 @@ Matthew Honnibal wrote a clear and detailed blog post about the Averaged Percept
 ## Getting the `PerceptronTagger`
 
 -----
+**UPDATE September 25, 2013**: TextBlob 0.7.0 is released. Instead of following the instructions below for getting the PerceptronTagger, just run
+
+<pre><code class="bash">$ pip install -U textblob textblob-aptagger</code></pre>
+
+-----
 
 **UPDATE September 19, 2013**: The installation process for the `PerceptronTagger` will be simplified in TextBlob 0.7.0 once the extension system is in place (should be released within the next couple of weeks). If you want to try it out early, [install the dev version of TextBlob](https://textblob.readthedocs.org/en/dev/install.html#get-the-bleeding-edge-version) then install the `textblob-aptagger` extension [here](https://github.com/sloria/textblob-aptagger). Otherwise, TextBlob 0.6.3 users can use the instructions below.
 

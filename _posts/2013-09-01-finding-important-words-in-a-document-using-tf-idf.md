@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Finding Important Words in Text Using TF-IDF"
+title: "Tutorial: Finding Important Words in Text Using TF-IDF"
 description: "A tutorial on how to use the TF-IDF algorithm to find important words in text. Uses Python and TextBlob."
 category: programming
 tags: [python, textblob, data-analysis]
