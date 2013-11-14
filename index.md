@@ -9,7 +9,7 @@ description: Steven Loria's personal page
 
 ### Biologist by formal education, programmer by self-education, and  octopus enthusiast.
 
-I go to class at the University of Wisconsin-Madison, do research at the [Marler Laboratory][marlerlab], and write code at the [Waisman Center for Brain Imaging][waisman].
+I go to class at the University of Wisconsin-Madison, do research at the [Marler Laboratory][marlerlab], and write code for the [Waisman Center for Brain Imaging][waisman] and [Center for Open Science][cos].
 
 I'm an amateur at everything in a constant struggle to [turn pro](/a-professional-reinvents-himself).
 
@@ -24,3 +24,4 @@ You can also find me on [Github][github] and [LinkedIn][linkedin]. I am no good 
 [github]: http://www.github.com/{{ site.author.github }}
 [linkedin]: http://www.linkedin.com/in/{{ site.author.linkedin }}
 [Twitter]: https://www.twitter.com/{{ site.author.twitter }}
+[cos]: http://centerforopenscience.org/
