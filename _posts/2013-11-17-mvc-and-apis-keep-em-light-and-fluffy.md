@@ -17,7 +17,7 @@ Here I use the example of data formatting to demonstrate how one might separate 
 
 The terms "Model", "View", and "Controller" can mean many different things depending on the context of the conversation. For example, the Django docs give a [sensible reason](https://docs.djangoproject.com/en/dev/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names) for calling controller functions "views"[^1].
 
-In this article, I use the abstract "layers" definition of MVC. **This means that there may be many different components that make up any of the M, V, or C**. The model layer, for example, aren't just subclasses of `django.models.Model` or `ActiveRecord`. It may include many other domain objects that pertain to a single subset of an functionality, e.g. a PaymentModel or a LoginModel.
+In this article, I use the abstract "layers" definition of MVC. **This means that there may be many different components that make up any of the M, V, or C**. The model layer, for example, aren't just subclasses of `django.models.Model` or `ActiveRecord`. It may include many other domain objects that pertain to a single subset of an functionality, e.g. a PaymentModel.
 
 - **Model** layer: Business data, rules, and logic. As pointed out above, may be more than just model classes.
 - **View** layer: Presentation of data. May include [ViewModels](https://en.wikipedia.org/wiki/Model_View_ViewModel) that convert and format model data for output to a user.
