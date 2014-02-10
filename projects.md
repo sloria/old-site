@@ -13,17 +13,21 @@ description: ""
 
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 
-**[SEPAL](http://sepalbio.com)**: Cloud-based acoustic feature extraction. Currently an invite-only beta. [Email me](mailto:{{ site.author.email }}) if you would be interested in using it.
-
-**[Sqk](http://www.github.com/sloria/usv)**: Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.
 
 ### Tiny Utilities That Do *One Thing Well*
 
-**[TextFeel](https://textfeel.herokuapp.com)**: A live, web-based sentiment analyzer.
+**[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for Javascript.
 
 **[tbpaste](https://www.github.com/sloria/tbpaste)**: Command line utility that runs sentiment analysis on the contents of your clipboard.
 
 **[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
+
+### Retired
+
+**[SEPAL](http://sepalbio.com)**: Cloud-based acoustic feature extraction. Currently an invite-only beta. [Email me](mailto:{{ site.author.email }}) if you would be interested in using it.
+
+**[Sqk](http://www.github.com/sloria/usv)**: Tools for automated classification and analysis of rodent vocalizations. Also my first Python project.
+
 
 You can find more of my projects at my [Github profile][github].
 
