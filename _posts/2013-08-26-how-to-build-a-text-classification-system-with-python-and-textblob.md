@@ -7,6 +7,8 @@ tags: [python, textblob, nlp]
 ---
 {% include JB/setup %}
 
+*Edit February 22, 2014*: Update command to donwnload corpora. Thanks `Jason` for pointing this out.
+
 Yesterday, [TextBlob 0.6.0][TextBlob] was released ([changelog][]), which introduces Naive Bayes classification. This tutorial shows how to use TextBlob to create your own text classification systems.
 
 The tutorial assumes that you have TextBlob >= 0.6.0 and nltk >= 2.0 installed. If you don't yet have TextBlob or need to upgrade, run:
@@ -16,7 +18,13 @@ The tutorial assumes that you have TextBlob >= 0.6.0 and nltk >= 2.0 installed. 
 
 If this is your first time installing TextBlob, you may have to download the necessary NLTK corpora. This can be done with one command:
 
+<strike>
 <pre><code class="bash">curl https://raw.github.com/sloria/TextBlob/master/download_corpora.py | python</code></pre>
+</strike>
+
+Edit: As of version 0.8.4, corpora should be downloaded with this command:
+
+<pre><code class="bash">python -m textblob.download_corpora</code></pre>
 
 ## Part 1: A Tweet Sentiment Analyzer (Simple classification)
 
