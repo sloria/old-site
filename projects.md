@@ -14,11 +14,11 @@ description: ""
 **[KillTheYak.com][KillTheYak]**: Collection of simple guides for accomplishing programming-related tasks.
 
 
-### Tiny Utilities That Do *One Thing Well*
+### Tiny Utilities
+
+**[webargs](https://github.com/sloria/AreYouSure.js)**: Request argument parser compatible with Flask, Django, and Bottle.
 
 **[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for Javascript.
-
-**[tbpaste](https://www.github.com/sloria/tbpaste)**: Command line utility that runs sentiment analysis on the contents of your clipboard.
 
 **[gig](https://www.github.com/sloria/gig)**: Generate `.gitignore` files from the command line.
 
