@@ -7,6 +7,9 @@ tags: [programming, python]
 ---
 {% include JB/setup %}
 
+
+*Edit February 28, 2014*: Removed `enumerate` usage in  "Interesting Return Value" section. Thanks Hugh Brown and Paul Winkler.
+
 *Edit September 5, 2013*: Fixed error in Sorted Collection. Thanks Frank Sievertsen.
 
 *Edit September 4, 2013*: Fixed typo in Choosing Message gist. `instanceof()` should be `isinstance()`. Thanks to `richardborcsik` for catching this.
@@ -14,6 +17,8 @@ tags: [programming, python]
 *Edit July 30, 2013*: Fixed typo in Sorted Collection gist. `__lt__(self, other)` needs two arguments. Thanks to Tiago Oliveira for catching this.
 
 These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice Patterns", given on May 2, 2013 at the Python Meetup in Denmark. The original video is [here](http://youtu.be/GZNUfkVIHAY) (about 38 minutes long).
+
+**NOTE**: Some of the code examples have been has been modified from the original presentation based on readers' feedback (see edits above).
 
 ## Composed method
     
