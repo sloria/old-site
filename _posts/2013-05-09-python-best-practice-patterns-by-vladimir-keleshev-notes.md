@@ -7,6 +7,7 @@ tags: [programming, python]
 ---
 {% include JB/setup %}
 
+*Edit February 28, 2014*: `__eq__` returns `NotImplemented` to avoid asymmetric comparison. Thanks Daniel Smith.
 
 *Edit February 28, 2014*: Removed `enumerate` usage in  "Interesting Return Value" section. Thanks Hugh Brown and Paul Winkler.
 
