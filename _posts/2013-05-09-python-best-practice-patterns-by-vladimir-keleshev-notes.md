@@ -141,7 +141,7 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 
 ### Further reading
 - [Smalltalk Best Practice Patterns](http://www.amazon.com/Smalltalk-Best-Practice-Patterns-ebook/dp/B00BBDLIME/ref=dp_kinw_strp_1)
-    - Not for Smalltalk: applicable to Python, Ruby, and many other languages
+    - Not just for Smalltalk: applicable to Python, Ruby, and many other languages
 
 
 
