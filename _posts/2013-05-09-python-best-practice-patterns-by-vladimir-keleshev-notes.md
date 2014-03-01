@@ -21,6 +21,8 @@ These are my notes from Vladimir Keleshev's talk entitled "Python Best Practice 
 
 **NOTE**: Some of the code examples have been has been modified from the original presentation based on readers' feedback (see edits above).
 
+**NOTE**: As Keleshev points out in the video, the code examples are written for **Python 3**, so all classes are new-style, even if they do not explicitly subclass from `object`.
+
 ## Composed method
     
 - Divide program into methods that perform one task
