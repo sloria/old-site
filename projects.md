@@ -16,7 +16,7 @@ description: ""
 
 ### Tiny Utilities
 
-**[webargs](https://github.com/sloria/AreYouSure.js)**: Request argument parser compatible with Flask, Django, and Bottle.
+**[webargs](https://github.com/sloria/webargs)**: Request argument parser compatible with Flask, Django, and Bottle.
 
 **[AreYouSure.js](https://github.com/sloria/AreYouSure.js)**: Inline confirmation dialogs for Javascript.
 
